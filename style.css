@@ -1,0 +1,102 @@
+body{
+    margin:0;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+header{
+    background-color:rgb(206, 144, 50);
+    height:5vh;
+}
+.container{
+    background-color: rgb(104, 100, 100);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 40px;
+    grid-template-rows: 80px 80px 80px 1fr;
+}
+.magazines{
+    grid-column: 1/2;
+    grid-row: 1/5;
+    background-color: rgb(252, 242, 242);
+    box-shadow: 0 0 20px 0;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 50% 10% 35%;
+    grid-template-rows: 20% 40% 40% ;
+    height: 88vh;
+    text-align: justify;
+    border: 1px solid black;
+}
+
+.mag_img{
+    display: grid;
+    grid-column: 1/4;
+    grid-row: 1/3;
+    
+    justify-content: stretch;
+}
+.mag_img > img{
+    height: 100%;
+    width: 100%;
+}
+.mag_text2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    
+}
+.mag_text3{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    padding: 20px;
+}
+.para1, .para2{
+    margin:8px;
+}
+.para1{
+    border-right: 1px solid black;
+    padding-right: 10px;
+}
+.mag_title{
+    display: grid;
+    grid-column: 2/4;
+    grid-row:3/4;
+    justify-content: center;
+    align-items: center;
+}
+.mag_text1{
+    grid-column: span 2;
+    padding-left: 30px;
+}
+
+.foods{
+    margin-top:5px;
+    background-color: rgb(117, 117, 253);
+    grid-column: 2/3;
+    grid-row: 1/2;
+  padding: 5px;
+}
+.tourist_spots{
+    background-color: rgb(247, 97, 97);
+    grid-column: 2/3;
+    grid-row: 2/3;
+   
+}
+.history{
+    background-color: rgb(240, 240, 56);
+    grid-column: 2/3;
+    grid-row: 3/4;
+} 
+.foods,.tourist_spots,.history{
+    border-radius: 0 5px 5px 0 ;
+   
+}
+
+  
+
+article{
+    background-color: rgb(206, 144, 50);
+}
+footer{
+    background-color:rgb(206, 144, 50);
+}
